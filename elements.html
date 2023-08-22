@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Animations and Logos Page</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+	<style>
+		#camera {
+			width: 360px;
+			height: 250px;
+			border: 1px solid grey;
+		}
+
+		#logo_img {
+			width: 150px;
+			border-radius: 100px;
+		}
+
+		#textbox {
+			width: 300px;
+		}
+
+		body {
+			background-color: black;
+		}
+
+		.t {
+			display: table;
+			width: 100%;
+			height: auto;
+		}
+
+		ul {
+			display: table-row
+		}
+
+		li {
+			display: table-cell
+		}
+
+		@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+.containr {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 75%;
+  top: 98.2%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containrr {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 27%;
+  top: 98.5%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 40px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid silver;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.btn2 {
+  width: 180px;
+  height: 40px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid silver;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: silver;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: rgb(58, 140, 233);
+}
+
+.btn3:hover {
+  transition: 1s ease-in-out;
+  background: rgb(233, 58, 58);
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: black;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.btn2:hover {
+  transition: 1s ease-in-out;
+  background: rgb(15, 139, 86);
+}
+
+.btn2:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn2 span {
+  color: black;
+  font-size: 18px;
+  font-weight: 100;
+}
+	</style>
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Preeti's Portfolio</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Fully-Fledged Websites</a></li>
+				<li><a href="generic.html">Animations & Designs</a></li>
+				<li class="active"><a href="elements.html">Apps</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/preetiadtani18/" class="icon brands fa-linkedin"><span
+							class="label">Linkedin</span></a></li>
+				<li><a href="https://www.instagram.com/prettyliciouss._/" class="icon brands fa-instagram"><span
+							class="label">Instagram</span></a></li>
+				<li><a href="https://github.com/preetivalecha" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+<h1> <center><b>Check some of my AI Webapps I developed!</h1></center></b>
+
+			<div class="containar">
+				<center>
+					<a href="" id="link" download="myselfie.png"></a>
+					<h2>AI Voice Selfie App
+						<img id="logo_img" src="selfie.jpeg">
+					</h2>
+					
+					<h5 style="color:red;">Please press allow as soon as popup comes. <br>After you give a voice command
+					</h5>
+
+					<div class="form-group">
+						<h3>Say "take my selfie"</h3>
+						<label>Your voice output : </label>
+						<textarea class="form-control" id="textbox" readonly="true"></textarea>
+					</div>
+
+					<button class="btn3" onclick="start()">Start</button>
+					<p>
+						<center>Press the Start button
+					</p>
+				</center>
+
+				<label>Your webcam : </label>
+				<div id="camera"></div>
+
+				<br>
+
+				<label>Your selife Will Display Here: </label>
+				<div id="result"></div>
+<hr>
+			
+<br><br>
+
+<div>
+	<h3>Snapchat Clown Filter</h3>
+	<video width="420" height="240" autoplay>
+		<source src="w4.mp4" type="video/mp4">
+	</video>
+	<br>
+	
+	
+	 <a href="https://preetivalecha.github.io/clownNose/" target="_blank"> <button class="btn2">
+		<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+		  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+		  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+		</svg>
+		<span>Try It!</span>
+	  </button></a>
+
+</div>
+<br><br>
+<hr>
+
+
+<br><br>
+
+<div>
+	<h3>Sketch and Predict!</h3>
+	<video width="420" height="240" autoplay>
+		<source src="w5.mp4" type="video/mp4">
+	</video>
+	<br>
+	
+	
+	<a href="https://preetivalecha.github.io/clownNose/" target="_blank"> <button class="btn2">
+		<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+		  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+		  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+		</svg>
+		<span>Try It!</span>
+	  </button></a>
+
+</div>
+<br><br>
+<hr>
+
+
+
+
+
+			<!--	<div class="t">
+					<ul>
+
+						<li><h3>Snapchat Clown Filter</h3>
+							<video width="320" height="240" autoplay>
+								<source src="w4.mp4" type="video/mp4">
+							</video>
+							<br>
+							
+							<div class="containrr">
+							<div class="center">
+							 <a href="https://preetivalecha.github.io/clownNose/" target="_blank"> <button class="btn2">
+								<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+								  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+								  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+								</svg>
+								<span>View App</span>
+							  </button></a>
+							</div>
+						  </div>
+
+						</li>
+&nbsp; &nbsp; &nbsp; &nbsp;
+						<li><h3>Sketch and Predict!</h3>
+							<video width="320" height="290" autoplay>
+								<source src="w5.mp4" type="video/mp4">
+							</video>
+						</li>
+						<br>
+						<div class="containr">
+							<div class="center">
+							  <a href="https://preetivalecha.github.io/sketchCanvas/" target="_blank"><button class="btn">
+								<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+								  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+								  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+								</svg>
+								<span>View App</span>
+							  </button></a>
+							</div>
+						  </div>
+
+						  
+					</ul>
+				</div>
+
+
+			</div>
+			</center>-->
+		
+			<script>
+				//speech to text
+				var SpeechRecognition = window.webkitSpeechRecognition;
+
+				var recognition = new SpeechRecognition();
+
+				function start() {
+					document.getElementById("textbox").innerHTML = "";
+					recognition.start();
+				}
+
+				recognition.onresult = function (event) {
+
+					console.log(event);
+
+					var Content = event.results[0][0].transcript;
+
+					document.getElementById("textbox").innerHTML = Content;
+					console.log(Content);
+
+					if (Content == "Take my selfie.") {
+						console.log("taking selfie --- ");
+						speak();
+					}
+					if (Content == "take my selfie") {
+						console.log("taking selfie --- ");
+						speak();
+					}
+				}
+
+				//text to speech
+				function speak() {
+					var synth = window.speechSynthesis;
+
+					speak_data = "Taking you Selfie in 5 seconds";
+
+					var utterThis = new SpeechSynthesisUtterance(speak_data);
+
+					synth.speak(utterThis);
+
+					Webcam.attach(camera);
+
+					setTimeout(function () {
+						take_snapshot();
+						save();
+					}, 5000);
+
+				}
+
+				camera = document.getElementById("camera");
+				Webcam.set({
+					width: 360,
+					height: 250,
+					image_format: 'jpeg',
+					jpeg_quality: 100
+				});
+
+				function take_snapshot() {
+					Webcam.snap(function (data_uri) {
+						document.getElementById("result").innerHTML = '<img id="selfie_image" src="' + data_uri + '"/>';
+					});
+				}
+
+
+				function save() {
+					link = document.getElementById("link");
+					image = document.getElementById("selfie_image").src;
+					link.href = image;
+					link.click();
+				}
+			</script>
+</div>
+<!--script code--all code in notepad-->
+</body>
+
+
+</html>

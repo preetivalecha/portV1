@@ -1,0 +1,825 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Preeti's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<style>
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.waviy {
+  position: relative;
+
+  font-size: 40px;
+}
+.waviy span {
+	/*font-family: 'Alfa Slab One', cursive;*/
+  position: relative;
+  display: inline-block;
+  color: #000;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+/*second*/
+.waviyy {
+  position: relative;
+}
+.waviyy span {
+	/*font-family: 'Alfa Slab One', cursive;*/
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #000;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+
+/*third*/
+
+:root {
+  --color-primary: black;
+  --color-secondary: #645f5f;
+  --color-tertiary: #746e6e;
+  --color-quaternary: #989d9e;
+  --color-quinary: #6BD6F5;
+  /*
+  --color-primary: #5192ED;
+  --color-secondary: #69A1F0;
+  --color-tertiary: #7EAEF2;
+  --color-quaternary: #90BAF5;
+  --color-quinary: #A2C4F5;
+  */
+}
+
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(1rem + 3vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+
+
+/*.blur {
+	/*font-family: 'Alfa Slab One', cursive;*/	
+  /*max-width: 40ch;
+  text-align: center;
+  transform: scale(0.2);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+.wanna {
+	color:black;
+ 
+}
+.containeer {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animatioon {
+  height:95px;
+  overflow:hidden;
+  margin-left: 0.7rem;
+}
+
+.animatioon > div > div {
+  padding: 0rem 1rem;
+  height:5.81rem;
+  margin-bottom: 4.81rem;
+  display:inline-block;
+}
+
+.animatioon div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#4e83d9;
+}
+.second div {
+  background-color:#CD921E;
+}
+.third div {
+  background-color:#c10528;
+}
+
+#pree{
+	border-radius: 50%;
+	width:280px;
+	height:280px;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+/*for carousel*/
+#hh {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px; /*top, rhs-lhs, bottom*/
+}
+#hh::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #8fbc54;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	padding: 0 0px; /*topbottom, leftright*/
+}
+.carousel .carousel-item {
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	min-height: 290px;
+}
+.carousel .carousel-item .img-box {
+	width: 635px;
+	height: 355px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #000;
+	
+}
+.carousel .img-box .img-boxx img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	
+}
+
+.carousel .carousel-item .img-boxx {
+	width: 750px;
+	height: 305px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #000;
+	
+}
+
+.carousel .carousel-item .img-boxx {
+	width: 635px;
+	height: 310px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #000;
+	
+}
+
+.carousel .testimonial {
+	padding: 50px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 80px;
+	height: 0px;
+	margin-top: -70px;
+	top: 50%;
+	background: none;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 68px;
+	line-height: 42px;
+	position: absolute;
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 12px;
+	height: 12px;
+	margin: 1px 3px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1><row>Welcome to my<br />
+						Portfolio</h1><img id="pree" src="pree.jpg"/></row><br>
+						<p>I am a web designer, developer and an animator. I make creative and professional websites. I am creating websites from over 3 years now. Stay tuned for some mind boggling web designs and animations.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Preeti's Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Fully-Fledged Websites</a></li>
+							<li><a href="generic.html">Tech</a></li>
+							<li><a href="elements.html">Animations and Logos</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/preetiadtani18/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.instagram.com/prettyliciouss._/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/preetivalecha" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+						<!--bleh
+							<article class="post featured">
+								<header class="major">
+									<span class="date">Latest project-Nov 20, 2022</span>
+									<h3 style="font-size:50px;">An informative site<br />
+									With bootstrap integration!</h3>
+									<p>An informative, creative site with picturisque accordions and slideshows. Dive into the world of charcoal products🤯</p>
+								</header>
+							
+									<div class="embed-responsive embed-responsive-16by9">
+									<video class="w-100" autoplay loop muted width="800">
+										<source src="w1.mp4" type="video/mp4" />
+									  </video>
+									</div>
+				
+								<ul class="actions special">
+									<li><a href="https://mowees.com/" class="button large">View the website</a></li>
+								</ul>
+							</article>-->
+
+				
+
+
+
+<div class="container-xxl">
+	<div class="row">
+		<div class="col-lg-6 mx-auto">
+			<h2 id="hh">Latest Work</h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+				</ol>   
+				<!-- Wrapper for carousel items -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="img-box"><video class="w-100" autoplay loop muted >
+							<source src="w1.mp4" type="video/mp4" />
+						  </video>
+						</div>
+						<p class="testimonial">A unique blend-in website with HD pictures to display your products in an exclusive manner.</p>
+						<p class="overview"><b>Mowees Group</b>, www.mowees.com</p>
+					</div>
+					<div class="carousel-item">
+						<div class="img-boxx"><video class="w-100" autoplay loop muted >
+							<source src="arkan-proj.mp4" type="video/mp4" />
+						  </video>
+						</div>
+						<p class="testimonial">Displaying your buisness in the most accessible and proffessional manner. </p>
+						<p class="overview"><b>Arkan Group</b>, www.arkan-group.com</p>
+					</div>
+					<!--<div class="carousel-item">
+						<div class="img-box"><img src="/examples/images/clients/3.jpg" alt=""></div>
+						<p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+						<p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+					</div>-->
+				</div>
+				<!-- Carousel controls -->
+				<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">Ecommerce</span>
+											<div class="waviy">
+											  <span style="--i:1">Shop</span>
+											  <span style="--i:2">Until</span>
+											  <span style="--i:3">You</span>
+											  <span style="--i:4">Drop</span>
+								            </div>
+										
+
+
+									</header>
+									<video width="460" height="255" style="border: solid;" autoplay loop muted>
+										<source src="w2.mp4" type="video/mp4">
+										</video>
+									<p>Integrated advanced swap translator websites with built in chatbot functionality to assist 
+										your customers 24 x 7.</p>
+									<ul class="actions special">
+										<li><a href="https://apaniot.com/" class="button">View the website</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Buisness</span>
+
+											<div class="waviyy">
+											  <span style="--i:1">Love</span>
+											  <span style="--i:2">&nbsp;Your</span>
+											  <span style="--i:3">&nbsp;Pets</span>
+										  	 </div>
+										
+
+
+									</header>
+									<video width="460" height="255" style="border: solid;" autoplay loop muted>
+										<source src="w3.mp4" type="video/mp4">
+										</video>
+									<p>Track payments and orders by coherent payment methods through secured gateways.</p>
+									<ul class="actions special">
+										<li><a href="https://mcfurr.com/" class="button">View the website</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Informational</span>
+											<!---<h2 class="blur">
+											<span>Custom</span>
+											<span>Custom</span>
+										  </h2>-->
+										  <div class="content">
+											<h2 class="text_shadows">Custom</h2>
+										  </div>
+
+
+
+									</header>
+									<video width="460" height="255" style="border: solid;" autoplay loop muted>
+										<source src="w1_4.mp4" type="video/mp4">
+										</video>
+									<p>Long form content to satisfy reader's curiosity and implement search functions.</p>
+									<ul class="actions special">
+										<li><a href="https://mowees.com/service/" class="button">View the website</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<span class="date">Community</span>
+
+										<main class="containeer">
+												<p class="wanna">Are you a</p>
+											<section class="animatioon">
+											  <div class="first"><div>Teacher</div></div>
+											  <div class="second"><div>Leader</div></div>
+											  <div class="third"><div>Change</div></div>
+											</section>
+										</main>
+									</header>
+									<video width="460" height="255" style="border: solid;" autoplay loop muted>
+										<source src="w6.mp4" type="video/mp4">
+										</video>
+									<p>Beguling record maintainence websites with real-time chat features to share written and visual content.
+										</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View the website</a></li>
+									</ul>
+								</article>
+							
+
+								<!--<article>
+									<header>
+										<span class="date">Personal</span>
+										<h2>Are you also big fan?</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+									<p>Classic personal portfolio websites to showcase your proffessional work, 
+										hobbies or in general promoting your individual interests</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View the website</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Online forum</span>
+										<h2>Chat and
+											socialise</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+									<p>Let your users interact and discuss popular topics and trending posts, build community around a shared interest</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View the website</a></li>
+									</ul>
+								</article>
+							</section>
+
+						
+
+						---Footer-----
+							
+
+							<footer>
+								<div class="pagination">
+									<a href="#" class="previous">Prev</a>
+									<a href="#" class="page active">1</a>
+									<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">Next</a>
+								</div>
+							</footer>
+
+					</div>
+
+				------Footer----------
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+
+				</div>-->
+				<!--<style>
+						#abcd{
+						text-align: center;
+						 font-size: 30px;
+						 color: white;
+						 padding: 10px;
+						 display: flex;
+						 align-items: center;
+						 height: 500px;
+						 width:100%;
+						 margin-top: 200px;
+						 margin-bottom: 50px;
+					 }
+					 .one
+					 {  
+						 float: left;  
+						 margin-right:300px;
+					 }
+					 .two
+					 {
+						 float: left;
+					 }
+					 .three
+					 {
+						 background-color: hotpink;
+						 float: left;
+					 }
+				</style>
+				<header class="u-heading-v8-2 text-center g-width-70x--md mx-auto g-mb-60">
+					<h2 class="u-heading-v8__title text-uppercase g-font-weight-600 g-mb-25">Contact us</h2>
+					<p class="lead mb-0">We do things differently company providing key digital services. Focused on helping our clients to build a successful business on web and mobile.</p>
+				  </header>
+				<form>
+				  <input type="text" placeholder="Your name">
+				  <input type="tel" placeholder="Your email *">
+				  <textarea rows="7" placeholder="Message"></textarea>
+				<button class="btn btn-block u-btn-outline-primary text-uppercase g-font-size-12 g-font-weight-700 g-brd-2 rounded-0 g-py-14 g-px-20" type="submit" role="button">Send Message</button>
+					  </form>
+					</div>
+				  
+				
+						<em class="d-block g-color-black-light-v2 text-uppercase g-font-size-12 g-font-style-normal g-mb-5">Address</em>
+						<strong class="d-block">Orange California, US</strong>
+					  </div>
+					  <div class="g-mb-25">
+						<span class="u-icon-v1 u-icon-size--xs g-color-primary">
+						  <i class="icon-call-in"></i>
+						</span>
+						<em class="d-block g-color-black-light-v2 text-uppercase g-font-size-12 g-font-style-normal g-mb-5">Phone Number</em>
+						<strong class="d-block">+1 555 2566 112</strong>
+					  </div>
+					  <div>
+						<span class="u-icon-v1 u-icon-size--xs g-color-primary">
+						  <i class="icon-envelope-letter"></i>
+						</span>
+						<em class="d-block g-color-black-light-v2 text-uppercase g-font-size-12 g-font-style-normal g-mb-5">Email</em>
+						<strong class="d-block">
+						  <a href="#!" class="g-color-main">info@htmlstream.com</a>
+						</strong>
+					  </div>
+					</div>
+				  </div>
+			<footer id="abcd">
+					
+						
+					<div class="one"> 
+				 <input type="text" placeholder="Your name">
+				  <input type="tel" placeholder="Your email *">
+				  <textarea rows="7" placeholder="Message"></textarea>
+				<button class="btn btn-block u-btn-outline-primary text-uppercase g-font-size-12 g-font-weight-700 g-brd-2 rounded-0 g-py-14 g-px-20" type="submit" role="button">Send Message</button>
+					 </div>
+					<div class="two"> 
+						<input type="text" placeholder="Your name">
+						<input type="tel" placeholder="Your email *">
+						<textarea rows="7" placeholder="Message"></textarea>
+					  <button class="btn btn-block u-btn-outline-primary text-uppercase g-font-size-12 g-font-weight-700 g-brd-2 rounded-0 g-py-14 g-px-20" type="submit" role="button">Send Message</button>
+						  
+					</div>				
+				</footer>-->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
